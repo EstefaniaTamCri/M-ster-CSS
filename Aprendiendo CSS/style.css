@@ -1,9 +1,66 @@
-body {
-    background: gray;
+/*
+---------------SELECTORES-------------------------
+*/
+
+/*Selector universal (sirve para todas las etiquetas que existan*/ 
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Selector de etiqueta*/
+h1{
+    background: grey;
+    color-scheme: black;
+    padding: 10px;
+}
+a{
+    font-size: 18px;
+    color: orange;
+    text-decoration: double;
+}
+footer a{
+    color: aqua;
+    font-size: 15px;
+}
+/*Selector de id*/
+#descripcion, 
+#titulo{
+    border: 5px solid black;
+    padding: 15px;
+}
+/*Selector de clase*/
+.parrafo{
+    font-weight: bold;
+    color:cornflowerblue;
+
+}
+.parrafo1{
+background-color: green;
+color: white;
+}
+/*Selector de atributo*/
+
+#usuario form{
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
 }
 
-h1 {
-    color:blueviolet;
-    font-size: 50px;
-    text-decoration: underline;
+#usuario form *{
+    display: block;
+}
+
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 200px;
+}
+
+input[type="submit"]{
+    color: black;
+    background: red;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
